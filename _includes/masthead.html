@@ -21,6 +21,12 @@
               >{{ link.title }}</a>
             </li>
           {%- endfor -%}
+          <li class="masthead__menu-item" style="padding:0;">
+            <img src="{{ '/assets/images/daplab_logo.png' | relative_url }}" alt="DAPLab" style="height:24px; width:auto; display:block; margin:0 6px;">
+          </li>
+          <li class="masthead__menu-item" style="padding:0;">
+            <img src="{{ '/assets/images/cra-e-logo.png' | relative_url }}" alt="CRA-E" style="height:24px; width:auto; display:block; margin:0 6px;">
+          </li>
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">

@@ -11,6 +11,6 @@ excerpt: "Systems foundations for exploration in agentic workloads."
 
 Accepted to SOSP SAA 2025 Workshop.
 
-Paper: [Toward Systems Foundations for Agentic Exploration](https://arxiv.org/abs/2510.05556)
+Paper: [Toward Systems Foundations for Agentic Exploration](https://arxiv.org/pdf/2510.05556)
 
 

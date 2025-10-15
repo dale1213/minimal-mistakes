@@ -9,6 +9,6 @@ header:
 excerpt: "Constraint-graph modeling for principled decomposition of complex LLM tasks."
 ---
 
-Preprint: [An approach for systematic decomposition of complex LLM tasks](https://arxiv.org/abs/2510.07772)
+Preprint: [An approach for systematic decomposition of complex LLM tasks](https://arxiv.org/pdf/2510.07772)
 
 
