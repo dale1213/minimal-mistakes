@@ -1,0 +1,37 @@
+{% assign post = include.post %}
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"{% if post.locale %} lang="{{ post.locale }}"{% endif %}>
+    <div style="display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap;">
+      {% if teaser %}
+      <a href="{{ post.url | relative_url }}" style="flex:0 0 220px; max-width:220px;">
+        <img src="{{ teaser | relative_url }}" alt="" style="width:100%; height:auto; border-radius:6px;">
+      </a>
+      {% endif %}
+      <div style="flex:1 1 320px; min-width:260px;">
+        <h2 class="archive__item-title no_toc" itemprop="headline" style="margin-top:0;">
+          <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+        </h2>
+        {% include page__meta.html %}
+        {% if post.excerpt %}
+          <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </article>
+  <hr style="margin:1rem 0;">
+  
+</div>
+
+
