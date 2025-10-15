@@ -1,7 +1,7 @@
 ---
 title: "Toward Systems Foundations for Agentic Exploration"
 authors: "Jiakai Xu*, Tianle Zhou*, Eugene Wu, Kostis Kaffes"
-venue: "SOSP SAA 2025 Workshop (Accepted)"
+venue: "SAA Workshop at SOSP 2025 (* equal contribution)"
 year: 2025
 header:
   teaser: "/assets/images/agent_exploration.png"

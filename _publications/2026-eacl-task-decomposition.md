@@ -1,7 +1,7 @@
 ---
 title: "An Approach for Systematic Decomposition of Complex LLM Tasks"
-authors: "Tianle Zhou, Jiakai Xu, Guanhong Liu, Jiaxiang Liu, Haonan Wang, Eugene Wu"
-venue: "Submitted to EACL 2026"
+authors: "Tianle Zhou§, Jiakai Xu§, Guanhong Liu§, Jiaxiang Liu§, Haonan Wang§, Eugene Wu*§"
+venue: "EACL 2026 (under review); §Columbia University; *Equal contribution with first authors"
 year: 2026
 header:
   teaser: "/assets/images/decomposition.png"
