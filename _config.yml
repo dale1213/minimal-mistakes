@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Tianle Zhou"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/selfie.png"
   bio              : "Ph.D.-track research assistant in systems for AI agents and data systems."
   location         : "New York, NY"
   email            : "zhout060@gmail.com"
