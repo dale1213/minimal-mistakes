@@ -23,8 +23,11 @@
         <h2 class="archive__item-title no_toc" itemprop="headline" style="margin-top:0;">
           <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
         </h2>
-        <p style="margin:0 0 0.25rem 0; color:#666;">
-          {% if post.authors %}{{ post.authors }}{% endif %}
+        {% if post.authors %}
+          {% assign authors_html = post.authors | replace: 'Tianle Zhou', '<strong>Tianle Zhou</strong>' %}
+        {% endif %}
+        <p style="margin:0 0 0.25rem 0; color:#666; font-size:0.9em;">
+          {% if post.authors %}{{ authors_html }}{% endif %}
           {% if post.venue %}{% if post.authors %} · {% endif %}{{ post.venue }}{% endif %}
         </p>
         {% include page__meta.html %}
